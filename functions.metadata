@@ -1,0 +1,23 @@
+[
+  {
+    "name": "ConversationDataConsumer",
+    "scriptFile": "ICon.OneChat.FuncApp.ConversationDataConsumer.dll",
+    "entryPoint": "ICon.OneChat.FuncApp.ConversationDataConsumer.ConversationDataConsumer.RunAsync",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "conversationStatusEvents",
+        "direction": "In",
+        "type": "eventHubTrigger",
+        "eventHubName": "conversationdatastream",
+        "connection": "EventHubConnectionString",
+        "cardinality": "Many",
+        "dataType": "String",
+        "properties": {}
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "description": {
+    "language": "dotnet-isolated",
+    "extensions": [ ".dll" ],
+    "defaultExecutablePath": "dotnet",
+    "defaultWorkerPath": "ICon.OneChat.FuncApp.ConversationDataConsumer.dll",
+    "workerIndexing": "true",
+    "canUsePlaceholder": true
+  }
+}
